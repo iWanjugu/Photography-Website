@@ -1,0 +1,58 @@
+/* FONTS */
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px|Open+Sans:400,300,300italic,400italic,600,600italic);
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/*font-family: 'Poiret One', cursive;*/
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300italic,400italic,600,600italic);
+/* font-family: 'Josefin Sans', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Sigmar+One|Lobster|Patua+One|Architects+Daughter|Kaushan+Script|Fredoka+One|Rock+Salt|Shadows+Into+Light+Two|Permanent+Marker|Handlee|Great+Vibes|Just+Another+Hand|Niconne|Limelight|Damion|Calligraffitti|Audiowide|Bad+Script);
+
+/*
+font-family: 'Shadows Into Light', cursive;
+
+font-family: 'Sigmar One', cursive;
+
+font-family: 'Lobster', cursive;
+
+font-family: 'Patua One', cursive;
+
+font-family: 'Architects Daughter', cursive;
+
+font-family: 'Kaushan Script', cursive;
+
+font-family: 'Fredoka One', cursive;
+
+font-family: 'Rock Salt', cursive;
+
+font-family: 'Shadows Into Light Two', cursive;
+
+font-family: 'Permanent Marker', cursive;
+
+font-family: 'Handlee', cursive;
+
+font-family: 'Great Vibes', cursive;
+
+font-family: 'Just Another Hand', cursive;
+
+font-family: 'Niconne', cursive;
+
+font-family: 'Limelight', cursive;
+
+font-family: 'Damion', cursive;
+
+font-family: 'Calligraffitti', cursive;
+
+font-family: 'Audiowide', cursive;
+
+font-family: 'Bad Script', cursive;
+*/
+
+/* BODY */
+body {
+    font-family: 'Open Sans';
+    margin= 0 auto;
+    background-color: black;
+    box-sizing:border-box;
