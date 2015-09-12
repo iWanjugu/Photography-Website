@@ -1,0 +1,30 @@
+body {
+    font-family: 'Open Sans';
+    margin: 0 auto;
+    background-color: black;
+    box-sizing:border-box;
+}
+
+div#id {
+    background-color: #fff;
+    margin: 5px;
+}
+
+div#header, div#footer {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 0;
+    background-color: #42729B;
+    width: auto;
+    height: 70px;
+}
+
+.logo1 {
+    font-family: 'Great Vibes';
+    font-size: 1.4em;
+}
+
+.logo1 span {
+    font-family: 'Rock Salt';
+    font-size: 2em;
+}
