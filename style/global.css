@@ -5,17 +5,18 @@
 /* font-family: 'Josefin Sans', sans-serif;*/
 
 
-html, body {
-    font-family: 'Poiret One';
+html, body {    
     margin: 0;
+    height: 100%;
     background-color: black;
+    font-family: 'Poiret One';
     color: #DBDBDB;
     box-sizing:border-box;
-    height: 100%;
+    
 }
 
 #wrap {
-    position: absolute;
+    position: relative;
     top: 0; right: 0; bottom: 0; left: 0;
     height: 100%;
     width: 100%
@@ -26,9 +27,10 @@ a {
 }
 
 div#container {
+    height: 100%;
     background-color: #fff;
     margin: 5px;
-    height: auto;
+    
 }
 
 /*SECTION 1: Header */
@@ -81,9 +83,10 @@ div#footer {
     font-size: 1.6em;  
 }
 
-
-/* SECTION 2: Body */
 /***********************************/
+/* SECTION 2: Body */
+
+/*Images*/
 
 div#sec2 {
     height: auto;
@@ -95,32 +98,39 @@ div#sec2 .image {
     height: 94%;
     width: 100%;
     display: inline-flex;
-    float: center;
+    align-items: center;
     margin-top: 3px;
 }
 
-/* 
-AnimationsFor "n" images You must define:
-a=presentation time for one image
-b=duration for cross fading
-Total animation-duration is of course t=(a+b)*n
+#one, #two, #three {
+    position: relative;
+    overflow: hidden;
+    margin-left: 50px;
 
-animation-delay = t/n or = a+b
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
 
-Percentage for keyframes:
+}
+#one, #three {
+    width: 300px;
+    height: 500px;
+}
 
-0%
-a/t*100%
-(a+b)/t*100% = 1/n*100%
-100%-(b/t*100%)
-100%
+#one {
+    margin-left: 15%;
+}
 
-n=5, a=7, b=2, t=(7+2)*5=45
+#two {
+    width: 300px;
+    height: 550px;
+ }
 
-*/
+#three {
+    margin-right: 15%;
+}
 
-
- /*aligning in center of div */
+/*aligning in center of div */
 #one img, #two img, #three img {
     width:100%;
     max-height:100%; /*to fit in div*/
@@ -140,35 +150,39 @@ n=5, a=7, b=2, t=(7+2)*5=45
     border-bottom-style: double;
     border-color: #DBDBDB;
     
+/* CSS ANIMATIONS */
+/* 
+AnimationsFor "n" images You must define:
+a=presentation time for one image
+b=duration for cross fading
+Total animation-duration is of course t=(a+b)*n
+
+animation-delay = t/n or = a+b
+
+Percentage for keyframes:
+
+0%
+a/t*100%
+(a+b)/t*100% = 1/n*100%
+100%-(b/t*100%)
+100%
+
+n=5, a=7, b=2, t=(7+2)*5=45
+
+*/
+    
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  
 }
 
-#one, #two, #three {
-    position: relative;
-    overflow: hidden;
-    margin-left: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #000;
-
-}
-#one, #three {
-    width: 320px;
-    height: 500px;
+#one img .second:hover {
+    opacity:0;
 }
 
-#one {
-    margin-left: 15%;
-}
 
-#two {
-    width: 300px;
-    height: auto;
- }
-
-#three {
-    margin-right: 15%;
-}
 
 
 
@@ -197,6 +211,8 @@ div#sec2 a:hover {
     text-decoration: underline;
     font-weight: bold;
 }
+
+
 
 
 
