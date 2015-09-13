@@ -1,3 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/*font-family: 'Poiret One', cursive;*/
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300italic,400italic,600,600italic);
+/* font-family: 'Josefin Sans', sans-serif;*/
+
+
 body {
     font-family: 'Open Sans';
     margin: 0 auto;
@@ -5,7 +12,7 @@ body {
     box-sizing:border-box;
 }
 
-div#id {
+div#container {
     background-color: #fff;
     margin: 5px;
 }
@@ -14,17 +21,66 @@ div#header, div#footer {
     padding-left: 20px;
     padding-top: 10px;
     margin: 0;
-    background-color: #42729B;
+    background-color: #444B54;
     width: auto;
     height: 70px;
 }
 
-.logo1 {
-    font-family: 'Great Vibes';
-    font-size: 1.4em;
+.logo1, .logo2 {
+    font-family: 'Poiret One';
+    float: left;
+    display: inline-flex;
+    align-items: center;
 }
 
-.logo1 span {
-    font-family: 'Rock Salt';
-    font-size: 2em;
+.two1, .two2 {   
+    font-size: 1.5em;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    margin-top: 0;
+    
 }
+
+.mid2 { 
+    height: 55px;
+    width: 30px;
+    text-align:center;
+    font-size: 3em;
+      
+    
+    
+
+}
+
+
+/* BOX: BODY */
+
+div#box {
+    background-color: #FFF;
+    height:80%;
+    width: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+/* FOOTER */
+div#footer {
+    text-align: center;
+    height: 50px;
+   
+}
+
+.logo2{
+    display: inline-block;
+    width: 100%;
+}
+
+.logo2 span {   
+    font-size: 1.6em;  
+}
+    
