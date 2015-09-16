@@ -7,8 +7,10 @@
     <head>
         
         <title> two2two </title>
+        <link ref="stylesheet" type="text/css" href="style/animate.css">
         <link rel="stylesheet" type="text/css" href="style/global.css">
-        <link ref="stylesheet" type="text/css" href="style/globalfont.css">
+
+
         <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0>
 
 
@@ -51,18 +53,32 @@
 		</script>
       
     </head>
-    
-<!-------------------------------------------------------------> 
-<body> 
 
-    <!-- /******* TITLE PAGE: PAGE 1 ******/  -->  
+
+<body>
+
+    <!--facebook start-->
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <!--facebook ends-->
+<!------------------------------------------------------------->
+<!-- /******* Title Page ******/  -->
 
     <!-- HEADER: INTRO PAGE-->
     <div id="wrapper">
 
     <div id="title">
         <a href="#page1">
-            <div class="logo1" >
+            <div class="logo1" class="animated bounce">
                 <div class="two1">two</div>
                 <div class="mid2">2</div>
                 <div class="two2">two</div>            
@@ -73,7 +89,9 @@
     </div>
     
   
-<!-- /*******  PAGE 2: About ******/  --> 
+<!------------------------------------------------------------->
+<!------ About Page ---->
+
 <div id="page1" class="wrapper">
 
     <!-- HEADER -->
@@ -85,10 +103,12 @@
                 <div class="tagline">...double the experience </div>
                 
                 <div class="nav"> 
-                    <a href="#titlepage"> Title </a>
-                    <a href="#page1"> Home </a>
-                    <a href="#"> Portfolio </a>
-                    <a href="#contact"> Contact </a>
+                    <ul>
+                        <li><a href="#title"> Title </a></li>
+                        <li><a href="#page1"> About </a></li>
+                        <li><a href="#portfolio"> Portfolio </a></li>
+                        <li><a href="#contact"> Contact </a></li>
+                    </ul>
                 </div>
             </div>
                 
@@ -96,38 +116,51 @@
     
         <!-- SECTION 2: Body -->
                     
-            <div id="homepage">
+            <div id="aboutpage">
 
                 <div class="image1">
-                    <!--<img class="fourth" src="images/bnw4.jpg" alt="">-->
-                    <img class="fourth" src="images/HeadShot4.jpg" alt="">-->
+
+                    <img src="images/2.jpg" alt="">
                 </div>    
 
                  <div class="text1">
-                     <h3 class="title"><span>t</span>itle</h3>
+                     <h3 class="title"><span>a</span>bout</h3>
                         
                      <p> 
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis pretium orci ac semper. Morbi convallis at ipsum quis volutpat. Etiam ac sapien et neque tempor venenatis. Vestibulum pellentesque sollicitudin fringilla. Etiam tempus vulputate elementum. Nam accumsan auctor augue, sed sodales ipsum. Curabitur ut nibh placerat est dapibus hendrerit. 
                      </p>
                 </div> 
 
+                <div class="image2">
+                   <img src="images/blue1.jpg" alt="">
+                </div>
             </div>
 
        
         
     </div> 
 
-    <!------------------------------------------------------------->   
+<!------------------------------------------------------------->
 <!------ Portfolio Page ---->    
 <div id="wrapper">    
-    <div id="titlepage">
-        <!-- HEADER: Page 1-->
+    <div id="portfolio">
+
+        <!-- HEADER -->
         <div id="header">
             <div class="logo1">
                 <div class="two1">two</div>
                 <div class="mid2">2</div>
-                <div class="two2">two</div>            
+                <div class="two2">two</div>
+                <div class="tagline">...double the experience </div>
+
+                <div class="nav">
+                    <a href="#title"> Title </a>
+                    <a href="#page1"> About </a>
+                    <a href="#portfolio"> Portfolio </a>
+                    <a href="#contact"> Contact </a>
+                </div>
             </div>
+
         </div >
        
         <!-- SECTION 2: Body -->
@@ -146,7 +179,7 @@
 
                 <div id="two" class="fadein2">
                     <img src="images/black2.jpg" alt="">                 
-                    <img src="images/light2.jpg" alt="">
+                    <img src="images/red1.jpg" alt="">
                     <img src="images/colour2.jpg" alt="">
                     <img src="images/bnw4.jpg" alt="">
                     <img src="images/white2.jpg" alt="">
@@ -171,12 +204,12 @@
          </div>    
     </div>
 </div>    
-    <!------------------------------------------------------------->
-    
-    <!------------------------------------------------------------->
 
+    
+<!------------------------------------------------------------->
+<!------ Contacts Page ---->
   <!-- Page 3 -->
-<div id="wrapper">
+<div id="wrapper1">
     
     <div id="contact">
 
@@ -189,18 +222,18 @@
                 <div class="tagline">...double the experience </div>
                 
                 <div class="nav"> 
-                    <a href="#titlepage"> Title </a>
-                    <a href="#page1"> Home </a>
-                    <a href="#"> Portfolio </a>
+                    <a href="#title"> Title </a>
+                    <a href="#page1"> About </a>
+                    <a href="#portfolio"> Portfolio </a>
                     <a href="#contact"> Contact </a>
-                </div>        
+                </div>
+
             </div>        
         </div >
         
-        <!-- The contacts -->
-   <!--Contacts -->
-     
- <div id="boxed">
+    <!-- The contacts -->
+
+        <div id="boxed">
         <!-- Normal Contacts --> 
         <div class="inbox1"> 
             <div class="box-top">
@@ -212,6 +245,11 @@
                             <br>
                             Email:     enquiries@twombili2.com
                         </p>
+
+                    <!--Placing Facebook-->
+
+                    <div class="fb-like" data-href="http://moringaschool.com/" data-width="50" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+
                 </div>
         </div> 
           
@@ -238,11 +276,11 @@
             </ul>
             </div>
     </div>
- </div>     
+        </div>
         
   <!-- SECTION 3: Footer -->    
         <div id="footer">         
-            <div class="logo2"> 
+            <div class="logo2"> https://www.youtube.com/watch?v=oxGmXOKazw0
                two<span>mbili</span>two  |  &copy 2015
             </div>
         </div>         
