@@ -15,8 +15,8 @@ html, body {
     
 }
 
-/*******  PAGE 1 ******/
-#wrap1, #wrap2 {
+/*******  TITLE  ******/
+#wrapper {
     position: relative;
     top: 0; right: 0; bottom: 0; left: 0;
     height: 100%;
@@ -42,7 +42,7 @@ div#header, div#footer {
     margin-bottom: 3px;
     background-color: #444B54;
     width: auto;
-    height: 65px;
+    height: 10%;
 }
 
 .logo1, .logo2 {
@@ -70,56 +70,36 @@ div#header, div#footer {
     margin-right: 2px;
 }
 
-
-/* SECTION 3: Footer */
-div#footer {
-    text-align: center;
-    height: 50px;
-    bottom: 0;
-    margin-top: 3px
-}
-
-.logo2{
-    display: inline-block;
-    width: 100%;
-}
-
-.logo2 span {   
-    font-size: 1.6em;  
-}
-
 /***********************************/
 /* SECTION 2: Body */
 
 /*Images*/
 
 div#sec2 {
-    height: auto;
+    height: 90%;
     background-color: black;
 }
 
 div#sec2 .image {
     background-color: #000;
-    height: 94%;
+    height: 90%;
     width: 100%;
     display: inline-flex;
     align-items: center;
     margin-top: 3px;
 }
 
-#one, #two, #three, .image1 {
+#one, #two, #three {
     position: relative;
     overflow: hidden;
     margin-left: 50px;
-    margin-left: auto;
     margin-right: auto;
     background-color: #000;
-
 }
 
 #one, #three {
     width: 280px;
-    height: 500px;
+    height: 400px;
 }
 
 #one {
@@ -136,7 +116,7 @@ div#sec2 .image {
 }
 
 /*aligning in center of div */
-#one img, #two img, #three img, .image1 {
+#one img, #two img, #three img {
     width:100%;
     max-height:100%; /*to fit in div*/
         
@@ -165,6 +145,7 @@ div#sec2 .text {
     margin: 0;
     text-align: center;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 
 div#sec2 a {
@@ -177,7 +158,6 @@ div#sec2 a:hover {
     font-size: 1.4em;
     color: #DBDBDB;
     text-decoration: underline;
-    font-weight: bold;
 }
 
 /***********************************/
@@ -229,6 +209,8 @@ div#homepage {
     display: block;
     margin-left: auto;
     margin-right: auto; 
+}
+
 
 .text1 {
     height: 100%;
@@ -243,7 +225,7 @@ h3 {
 
 /***********************************/
 /*******  PAGE 3  ******/
-*CONTACTS*/
+/*CONTACTS*/
 div#contact {
     height:30%;
     background-color: #B5AFA2; 
@@ -256,8 +238,6 @@ div#contact {
     width: 100%
 }
 
-/
- 
 div#box3 {
     background-color: #B5AFA2;
     height:auto;
@@ -305,4 +285,23 @@ div#contact .box-panel {
     font-size: 1em;
     font-style: oblique;
     color: #fff;
+}
+
+
+
+/* SECTION 3: Footer */
+div#footer {
+    text-align: center;
+    height: 50px;
+    bottom: 0;
+    margin-top: 3px
+}
+
+.logo2{
+    display: inline-block;
+    width: 100%;
+}
+
+.logo2 span {   
+    font-size: 1.6em;  
 }
