@@ -15,7 +15,8 @@ html, body {
     
 }
 
-#wrap {
+/*******  PAGE 1 ******/
+#wrap1, #wrap2 {
     position: relative;
     top: 0; right: 0; bottom: 0; left: 0;
     height: 100%;
@@ -26,7 +27,7 @@ a {
     text-decoration: none;
 }
 
-div#container {
+div#titlepage {
     height: 100%;
     background-color: #fff;
     margin: 5px;
@@ -49,6 +50,7 @@ div#header, div#footer {
     display: inline-flex;
     align-items: center;
     color: #DBDBDB;
+    
 }
 
 .two1, .two2 {   
@@ -64,7 +66,10 @@ div#header, div#footer {
     width: 30px;
     text-align:center;
     font-size: 3em;
+    font-weight: bold;
+    margin-right: 2px;
 }
+
 
 /* SECTION 3: Footer */
 div#footer {
@@ -102,18 +107,18 @@ div#sec2 .image {
     margin-top: 3px;
 }
 
-#one, #two, #three {
+#one, #two, #three, .image1 {
     position: relative;
     overflow: hidden;
     margin-left: 50px;
-
     margin-left: auto;
     margin-right: auto;
     background-color: #000;
 
 }
+
 #one, #three {
-    width: 300px;
+    width: 280px;
     height: 500px;
 }
 
@@ -131,7 +136,7 @@ div#sec2 .image {
 }
 
 /*aligning in center of div */
-#one img, #two img, #three img {
+#one img, #two img, #three img, .image1 {
     width:100%;
     max-height:100%; /*to fit in div*/
         
@@ -149,47 +154,10 @@ div#sec2 .image {
     border-top-style:double;
     border-bottom-style: double;
     border-color: #DBDBDB;
-    
-/* CSS ANIMATIONS */
-/* 
-AnimationsFor "n" images You must define:
-a=presentation time for one image
-b=duration for cross fading
-Total animation-duration is of course t=(a+b)*n
-
-animation-delay = t/n or = a+b
-
-Percentage for keyframes:
-
-0%
-a/t*100%
-(a+b)/t*100% = 1/n*100%
-100%-(b/t*100%)
-100%
-
-n=5, a=7, b=2, t=(7+2)*5=45
-
-*/
-    
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-  
 }
-
-#one img .second:hover {
-    opacity:0;
-}
-
-
-
-
-
-/***********************************/
 
 /* SECTION 2: Enter button */
-
+ 
 div#sec2 .text {
     background-color: #000;
     height: 5%;
@@ -212,8 +180,129 @@ div#sec2 a:hover {
     font-weight: bold;
 }
 
+/***********************************/
+/*******  PAGE 2 ******/
+.tagline {
+    font-size: 0.9em;
+    margin-left: 20px;
+    margin-top: 30px
+}
 
+.nav {
+    text-align: right;
+    float: right;
+    margin-left: 20px;
+    width: 80%;
+    height: 50%;
+}
 
+.nav a {
+    font-size: 1.1em; 
+    margin:  20px;
+    color: #fff;
+    font-weight: bold;
+}
 
-
+div#homepage {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+    background color: #fff;
+    color: black;
+}
     
+.image1 {
+    height: 70%;
+    width: 40%;
+}
+
+#one img, #two img, #three img, .image1 {
+    width:100%;
+    max-height:100%; /*to fit in div*/
+        
+    /*aligning vertically*/
+    position: absolute; /*parent div should be relatively positioned*/
+    top: 50%;
+    transform: translate(0, -50%);
+    
+    /*aligning horizontally*/    
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+
+.text1 {
+    height: 100%;
+    width: 600px; 
+}
+
+h3 {
+    font-size: 1.2em;
+    font-style: oblique;
+}
+
+
+/***********************************/
+/*******  PAGE 3  ******/
+*CONTACTS*/
+div#contact {
+    height:30%;
+    background-color: #B5AFA2; 
+}
+
+#wrap3 {
+    position: relative;
+    top: 0; right: 0; bottom: 0; left: 0;
+    height: 100%;
+    width: 100%
+}
+
+/
+ 
+div#box3 {
+    background-color: #B5AFA2;
+    height:auto;
+    width:1000px;
+    float:left;
+    height: 100%
+}
+
+div#boxed {
+    background-color: dimgray;
+    width: auto;
+    margin-left: 1000px;
+    height: 100%
+}
+div#boxed .inbox1 {
+    background-color: dimgray;
+    margin-left:0;
+    width: auto;
+    height:50%;
+    float:center;
+    top: 0;
+}
+div#boxed .inbox2{
+    background-color: dimgray;
+    margin-left:0;
+    width: auto;
+    height:50%;
+    float: center;
+    bottom: 0;
+   
+}
+
+div#contact .box-top {
+    font-size: 0.8em;
+    /*text-shadow: 0px 1px #000;*/ /*solid black*/
+    background-color:dimgray;
+    padding: 5px;
+    padding-left: 15px;
+    font-weight: 300; /*font will be lighter*/
+}
+
+div#contact .box-panel {
+    padding: 15px;
+    background-color:dimgray;
+    font-size: 1em;
+    font-style: oblique;
+    color: #fff;
+}
