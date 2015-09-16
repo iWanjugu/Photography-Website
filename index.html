@@ -6,53 +6,93 @@
         <link rel="stylesheet" type="text/css" href="style/global.css">
         <link ref="stylesheet" type="text/css" href="style/globalfont.css">
         <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0>
+
+        <!------------------------------------------------------------->  
+        
+        <!-- Photo Animations -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<!--<style type="text/css">
+			.fadein { position:relative; width:280px; height:500px; }
+            .fadeinmid { position:relative; width:300px; height:550px; }
+			.fadein img { position:absolute; left:0; top:0; }
+		</style>
+        -->
+		<script type="text/javascript">		
+			$(function(){
+			$('.fadein img:gt(0)').hide();
+			setInterval(function(){
+			$('.fadein :first-child').fadeOut(1200)
+			.next('img').fadeIn(1200)
+			.end().appendTo('.fadein');},
+			3000);
+                
+                $('.fadein2 img:gt(0)').hide();
+			setInterval(function(){
+			$('.fadein2 :first-child').fadeOut(1200)
+			.next('img').fadeIn(1200)
+			.end().appendTo('.fadein2');},
+			3000);
+                
+                $('.fadein3 img:gt(0)').hide();
+			setInterval(function(){
+			$('.fadein3 :first-child').fadeOut(1200)
+			.next('img').fadeIn(1200)
+			.end().appendTo('.fadein3');},
+			3000);
+                
+			});
+    
+		</script>
+        
+<!------------------------------------------------------------->        
+        
     </head>
     
 <body> 
-    
-<div id="wrap">
-    
-    <div id="container">
+
+<!-- /*******  PAGE 2 ******/  -->    
+    <div id="titlepage" >
 
         <!-- HEADER -->
         <div id="header">
             <div class="logo1">
                 <div class="two1">two</div>
                 <div class="mid2">2</div>
-                <div class="two2">two</div>             
-                </a>
-            </div >
-        </div>
-
+                <div class="two2">two</div>            
+                </div>
+             </div >
+       
         <!-- SECTION 2: Body -->
         <div id="sec2">
             
             <!-- Images -->   
             <div class="image">
 
-                <div id="one">
+                <div id="one" class="fadein">
                     <img class="first" src="images/black1.jpg" alt="">
-                   <!-- <img class="second" src="images/light1.jpg" alt="">-->
-                   <!-- <img class="third" src="images/colour1.jpg" alt="">
-                    <img class="fourth" src="images/bnw1.jpg" alt="">
-                    <img class="fifth" src="images/white1.jpg" alt="">-->
+                    <img class="second" src="images/light1.jpg" alt="">
+                    <img class="third" src="images/colour1.jpg" alt="">
+                    <img class="fourth" src="images/bnw1.jpg" alt="">-->
+                    <img class="fifth" src="images/white1.jpg" alt="">
                 </div>    
 
-                <div id="two">
-                    <!--<img class="first" src="images/black2.jpg" alt="">-->
+                <div id="two" class="fadein2">
+                    <img class="fifth" src="images/white3.jpg" alt=""> 
+                    <img class="first" src="images/black2.jpg" alt="">
                     <img class="second" src="images/light2.jpg" alt="">
-                    <!--<img class="third" src="images/colour2.jpg" alt="">
+                    <img class="third" src="images/colour2.jpg" alt="">
                     <img class="fourth" src="images/bnw2.jpg" alt="">
-                    <img class="fifth" src="images/white2.jpg" alt="">-->
+                    <img class="fifth" src="images/white2.jpg" alt="">
                 </div>     
 
-                 <div id="three">
-                    <!--<img class="first" src="images/black3.jpg" alt="">-->
+                 <div id="three" class="fadein3">
+                     <img class="second" src="images/light3.jpg" alt="">
+                    <img class="first" src="images/black3.jpg" alt="">
                     <img class="second" src="images/light3.jpg" alt="">
-                    <!--<img class="third" src="images/colour3.jpg" alt="">
+                    <img class="third" src="images/colour3.jpg" alt="">
                     <img class="fourth" src="images/bnw3.jpg" alt="">
-                    <img class="fifth" src="images/white3.jpg" alt="">-->
-                </div> 
+                </div>   
+             
 
             </div>
 
@@ -62,18 +102,134 @@
             </div>  
                 
          </div>    
+    
+        <!-- SECTION 3: Footer -->    
+        <div id="footer">         
+            <div class="logo2"> 
+               two<span>mbili</span>two  |  &copy 2015
+            </div>
+        </div>
+    
+    </div>
+   
+<!-- /*******  PAGE 2 ******/  --> 
+<div id="wrap2">
+    
+    <div id="page1">
+
+    <!-- HEADER -->
+        <div id="header">
+            <div class="logo1">
+                <div class="two1">two</div>
+                <div class="mid2">2</div>
+                <div class="two2">two</div>
+                <div class="tagline">...double the experience </div>
+                
+                <div class="nav"> 
+                    <a href="#titlepage"> Title </a>
+                    <a href="#page1"> Home </a>
+                    <a href="#"> Portfolio </a>
+                    <a href="#contact"> Contact </a>
+                </div>
+            </div>
+                
+        </div >
+    
+        <!-- SECTION 2: Body -->
+                    
+            <div id="homepage">
+
+                <div class="image1">
+                    <img class="fourth" src="images/bnw2.jpg" alt="">
+                </div>    
+
+                 <div class="text1">
+                     <h3 class="title">TITLE</h3>
+                        
+                     <p> 
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis pretium orci ac semper. Morbi convallis at ipsum quis volutpat. Etiam ac sapien et neque tempor venenatis. Vestibulum pellentesque sollicitudin fringilla. Etiam tempus vulputate elementum. Nam accumsan auctor augue, sed sodales ipsum. Curabitur ut nibh placerat est dapibus hendrerit. 
+                     
+                     </p>
+                </div> 
+
+            </div>
 
         <!-- SECTION 3: Footer -->    
         <div id="footer">         
             <div class="logo2"> 
                two<span>mbili</span>two  |  &copy 2015
             </div>
-        </div>    
+        </div>  
+        
+    </div> 
+</div> 
+  <!-- Page 3 -->
+<div id="wrap3">
+    
+    <div id="contact">
 
+    <!-- HEADER -->
+        <div id="header">
+            <div class="logo1">
+                <div class="two1">two</div>
+                <div class="mid2">2</div>
+                <div class="two2">two</div>
+                <div class="tagline">...double the experience </div>
+                
+                <div class="nav"> 
+                    <a href="#titlepage"> Title </a>
+                    <a href="#page1"> Home </a>
+                    <a href="#"> Portfolio </a>
+                    <a href="#contact"> Contact </a>
+                </div>        
+            </div>        
+        </div >
+        
+        <!-- The contacts -->
+   <!--Contacts -->
+     
+ <div id="boxed">
+        <!-- Normal Contacts --> 
+        <div class="inbox1"> 
+            <div class="box-top">Contact</div>
+                <div class="box-panel">
+                        Tel:       xxxxxxx
+                        <br>
+                        Email:     yyyyyyy
+                </div>
+        </div> 
+          
+     <!-- Inserting Social Media Widgets -->  
+    <div class="inbox2"> 
+        <div class="box-top">Social</div>
+            <div class="box-panel">
+             <ul>
+                <a href=#>
+                <img title="Facebook" alt="Facebook" style="margin-left: 30px" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="50"     height="50" />
+                </a> 
 
-    
-    
-    
+                <a href=#>
+                <img title="Twitter" alt="Twitter" style="margin-left: 30px" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="50" height="50" />
+                </a>
+
+                <a href=#>
+                <img title="Instagram" alt="Instagram" style="margin-left: 30px" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="50" height="50" />
+                </a>
+
+                <a href=#>
+                <img title="LinkedIn" alt="LinkedIn" style="margin-left: 30px" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="50" height="50" />
+                 </a>
+            </ul>
+            </div>
+    </div>
+ </div>     
+        
+        
+        
+</div>
+        
+ </div>    
+
 </div>   
     
 </body>
