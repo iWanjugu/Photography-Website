@@ -20,90 +20,60 @@
                 
                 $('.fadein img:gt(0)').hide();
                 setInterval(function(){
-                $('.fadein :first-child').fadeOut(1200)
-                .next('img').fadeIn(1200)
+                $('.fadein :first-child').fadeOut(2000)
+                .next('img').fadeIn(2000)
                 .end().appendTo('.fadein');},
-                3000);
+                7000);
 
                 $('.fadein2 img:gt(0)').hide();
                 setInterval(function(){
-                $('.fadein2 :first-child').fadeOut(1200)
-                .next('img').fadeIn(1200)
+                $('.fadein2 :first-child').fadeOut(2000)
+                .next('img').fadeIn(2000)
                 .end().appendTo('.fadein2');},
-                3000);
+                7000);
 
                 $('.fadein3 img:gt(0)').hide();
                 setInterval(function(){
-                $('.fadein3 :first-child').fadeOut(1200)
-                .next('img').fadeIn(1200)
+                $('.fadein3 :first-child').fadeOut(2000)
+                .next('img').fadeIn(2000)
                 .end().appendTo('.fadein3');},
-                3000);    
+                7000);  
+                
+                  $('.fadein4 img:gt(0)').hide();
+                setInterval(function(){
+                $('.fadein4 :first-child').fadeOut(2000)
+                .next('img').fadeIn(2000)
+                .end().appendTo('.fadein3');},
+                7000); 
+                
 			});
     
 		</script>
       
     </head>
     
-     <!-------------------------------------------------------------> 
+<!-------------------------------------------------------------> 
 <body> 
 
-<!-- /******* TITLE PAGE: PAGE 1 ******/  -->  
-<div id="wrapper">
-    <div id="titlepage">
+    <!-- /******* TITLE PAGE: PAGE 1 ******/  -->  
 
-        <!-- HEADER -->
-        <div id="header">
-            <div class="logo1">
+    <!-- HEADER: INTRO PAGE-->
+    <div id="wrapper">
+
+    <div id="title">
+        <a href="#page1">
+            <div class="logo1" >
                 <div class="two1">two</div>
                 <div class="mid2">2</div>
                 <div class="two2">two</div>            
             </div>
-        </div >
-       
-        <!-- SECTION 2: Body -->
-        <div id="sec2">
-            
-            <!-- Images -->   
-            <div class="image">
+        </a>    
+    </div >
 
-                <div id="one" class="fadein">
-                    <img src="images/black1.jpg" alt="">
-                    <img src="images/light1.jpg" alt="">
-                    <img src="images/colour1.jpg" alt="">
-                    <img src="images/bnw1.jpg" alt="">-->
-                    <img src="images/white1.jpg" alt="">
-                </div>    
-
-                <div id="two" class="fadein2">
-                    <img src="images/white3.jpg" alt=""> 
-                    <img src="images/black2.jpg" alt="">
-                    <img src="images/light2.jpg" alt="">
-                    <img src="images/colour2.jpg" alt="">
-                    <img src="images/bnw2.jpg" alt="">
-                    <img src="images/white2.jpg" alt="">
-                </div>     
-
-                 <div id="three" class="fadein3">
-                    <img src="images/light3.jpg" alt="">
-                    <img src="images/black3.jpg" alt="">
-                    <img src="images/light3.jpg" alt="">
-                    <img src="images/colour3.jpg" alt="">
-                    <img src="images/bnw3.jpg" alt="">
-                </div>               
-
-            </div>
-
-            <!-- Enter Section -->
-            <div class="text">        
-                <a href="#"> enter </a>     
-            </div>  
-                
-         </div>    
     </div>
-</div>    
-    <!------------------------------------------------------------->
-   
-<!-- /*******  PAGE 2 ******/  --> 
+    
+  
+<!-- /*******  PAGE 2: About ******/  --> 
 <div id="page1" class="wrapper">
 
     <!-- HEADER -->
@@ -147,6 +117,62 @@
         
     </div> 
 
+    <!------------------------------------------------------------->   
+<!------ Portfolio Page ---->    
+<div id="wrapper">    
+    <div id="titlepage">
+        <!-- HEADER: Page 1-->
+        <div id="header">
+            <div class="logo1">
+                <div class="two1">two</div>
+                <div class="mid2">2</div>
+                <div class="two2">two</div>            
+            </div>
+        </div >
+       
+        <!-- SECTION 2: Body -->
+        <div id="sec2">
+            
+            <!-- Images -->   
+            <div class="image">
+
+                <div id="one" class="fadein">
+                    <img src="images/black1.jpg" alt="">
+                    <img src="images/light3.jpg" alt="">
+                    <img src="images/colour1.jpg" alt="">
+                    <img src="images/bnw1.jpg" alt="">
+                    <img src="images/white3.jpg" alt="">
+                </div>    
+
+                <div id="two" class="fadein2">
+                    <img src="images/black2.jpg" alt="">                 
+                    <img src="images/light2.jpg" alt="">
+                    <img src="images/colour2.jpg" alt="">
+                    <img src="images/bnw4.jpg" alt="">
+                    <img src="images/white2.jpg" alt="">
+                </div>     
+
+                 <div id="three" class="fadein3">
+                    <img src="images/black3.jpg" alt="">
+                    <img src="images/light1.jpg" alt="">
+                    <img src="images/colour3.jpg" alt="">
+                    <img src="images/bnw3.jpg" alt="">
+                    <img src="images/white1.jpg" alt="">
+                    
+                </div>               
+
+            </div>
+
+            <!-- Enter Section -->
+            <div class="text">        
+                <a href="#"> enter </a>     
+            </div>  
+                
+         </div>    
+    </div>
+</div>    
+    <!------------------------------------------------------------->
+    
     <!------------------------------------------------------------->
 
   <!-- Page 3 -->
